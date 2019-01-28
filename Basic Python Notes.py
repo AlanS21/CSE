@@ -1,4 +1,4 @@
-"""
+
 print("Hello World!")
 # Apparently I'm going to slow, so I will speed up
 # This is a comment
@@ -42,7 +42,7 @@ print("%s? You belong in a museum!" % age)
 real_age = int(input("How old are you again? "))
 hidden_age = real_age + 5
 print(hidden_age)
-"""
+
 
 # Multi-line Comments
 
