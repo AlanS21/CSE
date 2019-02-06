@@ -1,22 +1,44 @@
 world_map = {
-    'R19A': {
-        'NAME': "MR. Wiebe's room ",
-        'DESCRIPTION': "This is the room that you are in.",
+    'NODE_1': {
+        'NAME': "UNITED STATES OF AMERICA ",
+        'DESCRIPTION': "Hello and Welcome to the USA.",
         'PATHS': {
-          'NORTH': "PARKING_LOT"
+          'NORTH': "NODE_2",
+          'SOUTH': "NODE_3"
         }
     },
-    'PARKING_LOT': {
-        'NAME': " A Parking Lot",
-        'DESCRIPTION': "There are a few cars parked here. ",
+    'NODE_2': {
+        'NAME': "CANADA",
+        'DESCRIPTION': "Hello and welcome to the Canada ",
         'PATHS': {
-          'SOUTH': 'R19A'
+          'SOUTH': 'NODE_1'
         }
-    }
+    },
+    'NODE_3': {
+        'NAME': "MEXICO",
+        'DESCRIPTION': "Hola bienvenido a Mexico ",
+        'PATHS': {
+          'SOUTH': 'NODE_1'
+          'NORTH' 'NODE_1'
+        }
+    },
+    'NODE_4': {
+        'NAME': "NICARAGUA",
+        'DESCRIPTION': " ",
+        'PATHS': {
+          'SOUTH': 'NODE_1'
+        }
+    },
+
+
+
+
+
 }
 
 directions = ["NORTH", "SOUTH", "EAST", "WEST", "UP", "DOWN"]
-current_node = world_map["R19A"]
+current_node = world_map["NODE_1"]
+
 
 playing = True
 while playing:
