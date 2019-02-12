@@ -24,11 +24,19 @@ world_map = {
     },
     'NODE_4': {
         'NAME': "NICARAGUA",
-        'DESCRIPTION': " ",
+        'DESCRIPTION': "Hola bienvenido a Nicaragua ",
         'PATHS': {
           'SOUTH': 'NODE_1'
         }
     },
+    'NODE_5': {
+        'NAME': "PACIFIC_OCEAN",
+        'DESCRIPTION': "Hola bienvenido a Nicaragua ",
+        'PATHS': {
+          'SOUTH': 'NODE_1'
+        }
+    },
+
 
 
 
