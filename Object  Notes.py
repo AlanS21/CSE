@@ -9,17 +9,22 @@ class Laptop(object):
         self.color = colour
         self.os = "Linux"
 
-     def charge(self, time):
-         # Charge is already charged
-         if self.battery_left >= 100:
-             print("The computer is already charged.")
-             return
+    def charge(self, time):
+        # Charge is already charged
+        if self.battery_left >= 100:
+            print("The computer is already charged.")
+            return
 
-             self.battery_left += time
-         # Computer is mostly charged
-         if self.battery_left > 100:
-             print("The computer completely charges.")
+        self.battery_left += time
+        # Computer is mostly charged
+        if self.battery_left > 100:
+            print("The computer completely charges.")
 
-         # Computer is not charged at all
-         else:
-             print("The computer is now at %d%%" % self.battery_left)
+        # Computer is not charged at all
+        else:
+            print("The computer is now at %d%%" % self.battery_left)
+
+
+my_computer = Laptop("1920x1080", 10000, "Black")
+your_computer = Laptop("10x10", 0, "Orange")
+wiebe_computer = Laptop("9000000000000000000x10000000000000000", 9999999999999999999999, "Awesome")
